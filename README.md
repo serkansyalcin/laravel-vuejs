@@ -62,3 +62,22 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+Setup laravel project using command "composer create-project --prefer-dist laravel/laravel laravel-vuejs-crude"
+
+install vuejs using npm "npm install vue"
+
+created products table using migration using command "php artisan make:migration products"
+
+set environment varibles for database in .env file
+
+add key(id,name,picture,created_at,updated_at) in app/database/migrations/yourtabel
+
+migrate the table using command "php artisan migrate" the by default created tables will also migrate to database you can remove them
+
+Now we create model using command "php artisan make:model Products" and add fillable in that file
+
+Now we create controller using command "php artisan make:controller ProductsCrudeController and Add add out product model import on top and then add all our crud operation functionalities in it
+
+Now we install vue-router and vue-axios using command npm install "npm install vue-router vue-axios"
